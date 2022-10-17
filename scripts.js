@@ -105,7 +105,7 @@ if (playerScore === 5 || computerScore === 5) {
     document.getElementById('rock').style.display = 'none';
     document.getElementById('scissors').style.display = 'none';
     document.getElementById('paper').style.display = 'none';
-    document.getElementById('play-again').style.display = 'block';
+    document.getElementById('play-again').style.display = 'inline';
     let playAgain = document.getElementById('play-again');
     playAgain.addEventListener('click', reset);
     if (playerScore > computerScore) {
