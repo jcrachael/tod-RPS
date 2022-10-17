@@ -1,3 +1,6 @@
+let playerScore = 0;
+let computerScore = 0;
+
 // play 5 times
 function game() {
     for (let i = 0; i < 5; i++) {
@@ -33,20 +36,33 @@ function game() {
             // draw
             if (playerSelection === computerSelection) {
                 console.log("It's a tie! You both chose " + playerSelection +"!");
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             // player wins
             } else if (playerSelection === "rock" && computerSelection === "scissors") {
                 console.log("You won! " + playerSelection + " beats " + computerSelection + ".");
+                playerScore += 1;
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             } else if (playerSelection === "paper" && computerSelection === "rock") {
                 console.log("You won! " + playerSelection + " beats " + computerSelection + ".");
+                playerScore += 1;
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             } else if (playerSelection === "scissors" && computerSelection === "paper") {
                 console.log("You won! " + playerSelection + " beats " + computerSelection + ".");
+                playerScore += 1;
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             // computer wins
             } else if (playerSelection === "rock" && computerSelection === "paper") {
                 console.log("You lose! " + playerSelection + " loses to " + computerSelection + ".");
+                computerScore += 1;
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             } else if (playerSelection === "paper" && computerSelection === "scissors") {
                 console.log("You lose! " + playerSelection + " loses to " + computerSelection + ".");
+                computerScore += 1;
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             } else if (playerSelection === "scissors" && computerSelection === "rock") {
                 console.log("You lose! " + playerSelection + " loses to " + computerSelection + ".");
+                computerScore +=1;
+                console.log("Scores: You are on " + playerScore + " points. The computer is on " + computerScore + " points.");
             }
         };
 
@@ -57,3 +73,11 @@ function game() {
 }
 
 game()
+
+if (playerScore === computerScore) {
+    console.log("It's a tie!");
+} else if (playerScore > computerScore) {
+    console.log("You won! " + playerScore + " to " + computerScore + ". Thanks for playing!");
+} else if (playerScore < computerScore) {
+    console.log("You lost! " + playerScore + " to " + computerScore + ". Better luck next time.");
+}
