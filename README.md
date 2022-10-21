@@ -1,6 +1,8 @@
 #  Rock Paper Scissors 
 A JavaScript game of Rock, Paper, Scissors made as part of The Odin Project's Foundations course: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors.
 
+Live demo: https://jcrachael.github.io/tod-RPS/
+
 This game will be played entirely in the console against the computer.
 
 ## Pseudocode
@@ -12,3 +14,11 @@ A function called playRound() will take two parameters, playerSelection and comp
 
 A function called game() will call the playRound() function inside of it to play a 5-round game via a for-loop with 5 iterations. Then the winner will be printed to the console.
 
+### To-dos:
+1.	add images of rock, paper, and scissors
+2.	fix lower case start of sentence typo in JavaScript (query use regex)
+3.	improve styling for more pleasing UI
+
+---------------------------------------------------------------------------
+
+Last updated: 21 October 2022
