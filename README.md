@@ -1,4 +1,6 @@
 #  Rock Paper Scissors 
+Live demo: https://jcrachael.github.io/tod-RPS/
+
 A JavaScript game of Rock, Paper, Scissors made as part of The Odin Project's Foundations course: https://www.theodinproject.com/lessons/foundations-rock-paper-scissors.
 
 Live demo: https://jcrachael.github.io/tod-RPS/
